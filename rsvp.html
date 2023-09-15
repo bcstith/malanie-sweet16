@@ -68,7 +68,7 @@
 
       .form-coming label {
         padding-right: 2rem;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-weight: normal;
         margin-right: 2.0rem;
       }
@@ -166,7 +166,7 @@
       <input type="radio" name="coming" value="yes">
       <label for="">YES, I'll be there</label>
 
-      <input type="radio" name="coming" value="no">
+      <input type="radio" name="coming" value="no" checked>
       <label for="">NO, I can't make it</label>
     </div>
 
@@ -176,19 +176,19 @@
       <div class="form-section">
         <div class="form-input">
           <label>First Name:</label>
-          <input type="text" name="first-name" value="">
+          <input type="text" name="first-name" value="" required>
         </div>
 
         <div class="form-input">
           <label>Last Name:</label>
-          <input type="text" name="last-name" value="">
+          <input type="text" name="last-name" value="" required>
         </div>
       </div>
 
       <div class="form-section">
         <div class="form-input">
           <label>Email:</label>
-          <input type="text" name="email" value="">
+          <input type="text" name="email" value="" required>
         </div>
 
         <div class="form-input">
@@ -201,7 +201,7 @@
 
     <div class="form-bottom">
       <label>Number of attendees?</label>
-        <select>
+        <select name="number-attendees">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
