@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Malanie Sweet 16 - RSVP</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
-
       * {
         margin: 0;
         padding: 0;
@@ -31,15 +33,15 @@
         margin-top: 6.4rem;
       }
 
-      .header h1{
-        font-family: 'Roboto', sans-serif;
+      .header h1 {
+        font-family: "Roboto", sans-serif;
         font-size: 4.5rem;
-        color:#FFF;
+        color: #fff;
         letter-spacing: 0.3rem;
       }
 
       .header h2 {
-        font-family: 'Allura', cursive;
+        font-family: "Allura", cursive;
         font-size: 9.2rem;
         color: #d0ebff;
         letter-spacing: 0.2rem;
@@ -60,7 +62,7 @@
 
       form {
         color: #000;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         display: flex;
         flex-direction: column;
         gap: 3rem;
@@ -70,11 +72,11 @@
         padding-right: 2rem;
         font-size: 1.6rem;
         font-weight: normal;
-        margin-right: 2.0rem;
+        margin-right: 2rem;
       }
 
       .form-coming input {
-          margin-right: 1.0rem;
+        margin-right: 1rem;
       }
 
       .form-header {
@@ -104,10 +106,10 @@
       }
 
       .form-input input {
-        padding: 1.0rem 1.5rem;
+        padding: 1rem 1.5rem;
         font-size: 1.6rem;
         margin-right: 1.6rem;
-        width: 33.0rem;
+        width: 33rem;
         border-radius: 0.5rem;
         border: 1px solid #868e96;
       }
@@ -128,10 +130,9 @@
 
       .form-bottom select {
         font-size: 1.6rem;
-        padding: 1.0rem;
+        padding: 1rem;
         border-radius: 0.5rem;
       }
-
 
       .form-submit {
         display: flex;
@@ -142,85 +143,75 @@
 
       .btn {
         background-color: #228be6;
-        color: #FFF;
+        color: #fff;
         font-size: 1.4rem;
         padding: 1.2rem 2.2rem;
-        border:none;
+        border: none;
         border-radius: 0.5rem;
       }
     </style>
   </head>
   <body>
-
-<div class="header">
-  <h1>RSVP for</h1>
-  <h2>Malanie Sweet 16</h2>
-</div>
-
-<div class="form-box">
-
-    <form method="Post" name="rsvp" netlify>
-
-    <div class="form-coming">
-      <p class="form-header">Can you attend?</p>
-      <input type="radio" name="coming" value="yes">
-      <label for="">YES, I'll be there</label>
-
-      <input type="radio" name="coming" value="no" checked>
-      <label for="">NO, I can't make it</label>
+    <div class="header">
+      <h1>RSVP for</h1>
+      <h2>Malanie Sweet 16</h2>
     </div>
 
-    <div class="form-name">
-      <p class="form-header">Name</p>
+    <div class="form-box">
+      <form method="Post" name="rsvp" netlify>
+        <div class="form-coming">
+          <p class="form-header">Can you attend?</p>
+          <input type="radio" name="coming" value="yes" checked />
+          <label for="">YES, I'll be there</label>
 
-      <div class="form-section">
-        <div class="form-input">
-          <label>First Name:</label>
-          <input type="text" name="first-name" value="" required>
+          <input type="radio" name="coming" value="no" />
+          <label for="">NO, I can't make it</label>
         </div>
 
-        <div class="form-input">
-          <label>Last Name:</label>
-          <input type="text" name="last-name" value="" required>
-        </div>
-      </div>
+        <div class="form-name">
+          <p class="form-header">Name</p>
 
-      <div class="form-section">
-        <div class="form-input">
-          <label>Email:</label>
-          <input type="text" name="email" value="" required>
+          <div class="form-section">
+            <div class="form-input">
+              <label>First Name:</label>
+              <input type="text" name="first-name" value="" required />
+            </div>
+
+            <div class="form-input">
+              <label>Last Name:</label>
+              <input type="text" name="last-name" value="" required />
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="form-input">
+              <label>Email:</label>
+              <input type="text" name="email" value="" required />
+            </div>
+
+            <div class="form-input">
+              <label>Phone:</label>
+              <input type="text" name="phone" value="" />
+            </div>
+          </div>
         </div>
 
-        <div class="form-input">
-          <label>Phone:</label>
-          <input type="text" name="phone" value="">
+        <div class="form-bottom">
+          <label>Number of attendees?</label>
+          <select name="number-attendees">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
         </div>
-      </div>
 
+        <div class="form-submit">
+          <button type="submit" class="btn">Send</button>
+          <button class="btn">Cancel</button>
+        </div>
+      </form>
     </div>
-
-    <div class="form-bottom">
-      <label>Number of attendees?</label>
-        <select name="number-attendees">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-    </div>
-
-    <div class="form-submit">
-        <button type="submit" class="btn">Send</button>
-        <button class="btn">Cancel</button>
-    </div>
-
-  </form>
-</div>
-
-
-
-
-
   </body>
 </html>
